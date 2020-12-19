@@ -1,0 +1,7 @@
+## Interface: 90200
+## Author: Inkounter
+## Title: Great Vault Slash Command
+## Version: 1.0
+## Notes: Adds a '/vault' chat command to open the great vault UI panel.
+
+main.lua
