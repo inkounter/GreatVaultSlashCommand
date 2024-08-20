@@ -5,7 +5,7 @@ SLASH_GREATVAULTSLASHCOMMAND1 = '/vault'
 SlashCmdList['GREATVAULTSLASHCOMMAND'] = function()
     local frame = WeeklyRewardsFrame
     if frame == nil then
-        LoadAddOn("Blizzard_WeeklyRewards")
+        C_AddOns.LoadAddOn("Blizzard_WeeklyRewards")
         frame = WeeklyRewardsFrame
     end
 
