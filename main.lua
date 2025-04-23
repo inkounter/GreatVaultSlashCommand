@@ -10,19 +10,20 @@ SlashCmdList['GREATVAULTSLASHCOMMAND'] = function()
         frame:HookScript(
             "OnShow",
             function()
-                -- Disable the overlay that reminds the player to go to their
-                -- vault.
+                C_Timer.After(0, function()
+                    -- Disable the overlay that reminds the player to go to
+                    -- their vault.
 
-                if frame.Overlay then
-                    frame.Overlay.Show = function() end
-                    frame.Overlay:Hide()
-                end
+                    if frame.Overlay then
+                        frame.Overlay:Hide()
+                    end
 
-                -- Pass mouse events through the blackout.
+                    -- Pass mouse events through the blackout.
 
-                if frame.Blackout then
-                    frame.Blackout:EnableMouse(false)
-                end
+                    if frame.Blackout then
+                        frame.Blackout:EnableMouse(false)
+                    end
+                end)
             end)
     end
 
