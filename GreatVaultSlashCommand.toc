@@ -1,4 +1,4 @@
-## Interface: 100100
+## Interface: 120000
 ## Author: Inkounter
 ## Title: Great Vault Slash Command
 ## Version: 1.0
